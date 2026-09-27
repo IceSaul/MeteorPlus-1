@@ -152,7 +152,7 @@ public class TriggerBot extends Module {
 
 	@EventHandler
 	private void onTick(Render3DEvent event) {
-		if (mc.player.isUsingitem()) return;
+		if (mc.player.isUsingItem()) return;
 		if (!mc.player.isAlive() || PlayerUtils.getGameMode() == GameType.SPECTATOR) return;
 		if (mc.crosshairPickEntity == null) return;
 
